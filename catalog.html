@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset="utf-8">
+	    <title>nerds-catalog</title>
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/symbols-nerds.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300&subset=cyrillic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<div class="main">
+			<header class="main_header">
+				<div class="container clearfix">
+					<div class="header_logo"><img src="img/logo_nerd.png"></div>
+					<nav class="header_nav">
+						<ul>
+							<li><a href="index.html">студия</a></li>
+							<li><a href="#">клиенты</a></li>
+							<li class="active"><a href="#">магазин</a></li>
+							<li><a href="#">контакты</a></li>
+						</ul>
+					</nav>
+					<div class="bucket"><a href="#" class="icon-basket">корзина</a></div>
+				</div>
+			</header>
+			<div class="main_title">
+				<div class="container">
+					<h1>Добро пожаловать в магазин 
+						готовых макетов</h1>
+				</div>
+			</div>
+		<div class="content">
+			<div class="container clearfix">
+				<div class="main_filter column-left">
+					<form action="/echo" method="post">
+						<div class="price">
+		 					<legend>СТОИМОСТЬ:</legend>
+							<input type="range" name="price_range" min="0" max="15000" step="1" value="12000"> <br>
+							<label for="price_min">OT</label>
+							<input type="number" name="price_min" min="0" max="1500">
+							<label for="price_max">ДО</label>
+							<input type="number" name="price_max" min="0" max="1500">
+						</div>
+						<div class="gird">
+							<legend>СЕТКА:</legend>
+							<input type="radio" id="gird_adaptive" name="gird" value="adaptive" checked>
+							<label for="gird_adaptive">Адпаптивная</label><br>
+							<input type="radio" id="gird_fix" name="gird" value="fix">
+							<label for="gird_fix">Фиксированная</label><br>
+							<input type="radio" id="gird_resize" name="gird" value="resize">
+							<label for="gird_resize">Резиновая</label><br>
+						</div>
+						<div class="spechial">
+							<legend>ОСОБЕННОСТИ:</legend>
+							<input type="checkbox" id="slaider" name="slaider" value="slaider" checked>
+							<label for="slaider">Слайдер</label><br>
+							<input type="checkbox" id="block" name="block" value="block">
+							<label for="block">Блок преимуществ</label><br>
+							<input type="checkbox" id="news" name="news" value="news">
+							<label for="news">Новости</label><br>
+							<input type="checkbox"  id="gallery" name="gallery" value="gallery" checked>
+							<label for="gallery">Галерея</label><br>
+							<input type="checkbox" id="backet" name="backet" value="backet">
+							<label for="backet">Корзина</label><br>
+						</div>
+					</form>
+				</div>
+				<div class="catalog column-right">
+					<header class="work_header clearfix">
+						<div class="filter_container">
+							<p>СОРТИРОВАТЬ:</p>
+							<ul>
+								<li>ПО ЦЕНЕ</li>
+								<li>ПО ТИПУ</li>
+								<li>ПО ФУНКЦИОНАЛУ</li>
+							</ul>
+						</div>
+						<div class="arow"></div>
+					</header>
+					<div class="work_gallery">
+						<a href="#"><img src="img/work.jpg"></a>
+						<a href="#"><img src="img/work2.jpg"></a>
+						<a href="#"><img src="img/work3.jpg"></a>
+						<a href="#"><img src="img/work4.jpg"></a>
+						<a href="#"><img src="img/work5.jpg"></a>
+						<a href="#"><img src="img/work6.jpg"></a>
+					</div>
+					<div class="pages">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">СЛЕДУЮЩАЯ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="contact_map">
+				<div class="container clearfix">
+					<div class="contact column-left">
+						<h4>NЁRDS <span>DESIGN STUDIO</span></h4>
+						<p>350000, Краснодар, 
+						ул. Головатого, 100
+						</p>
+						<p>
+						тел. +7 (861) 275-75-75</p>
+						<a href="#" class="btn">НАПИШИТЕ НАМ</a>
+					</div>
+					<div class="buble column-right"><img src="img/logo_map.png" alt=""></div>
+				</div>
+		    </div>
+		<footer class="main_footer">
+			<div class="container clearfix">
+				<div class="sochial column-left">
+				  <a href="#" class="social-btn social-btn-vk icon-vk"></a>
+		          <a href="#" class="social-btn social-btn-fb icon-facebook"></a>
+		          <a href="#" class="social-btn social-btn-inst icon-instagramm"></a>
+		        </div>
+				<div class="slogan column-right">
+					<h2>Давайте дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</body>
+</html>
