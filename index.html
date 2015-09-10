@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/symbols-nerds.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300&subset=cyrillic' rel='stylesheet' type='text/css'>
+    
 </head>
 
 <body>
     <div class="main">
         <header class="main_header">
             <div class="container clearfix">
-                <div class="header_logo"><img src="img/logo_nerd.png"></div>
+                <div class="header_logo"><img src="img/logo_nerd.png" alt="logo_nerd"></div>
                 <nav class="header_nav">
                     <ul>
                         <li class="active"><a href="#">студия</a></li>
@@ -26,48 +27,56 @@
             </div>
         </header>
         <div class="slider">
-            <div class="container clearfix">
-                <div class="main_slider column-left display">
-                    <h2>Долго, дорого, скрупулезно.</h2>
-                    <p>Математически выверенный дизайн
-                        <br> для вашего сайта или мобильного приложения.
-                    </p>
-                    <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                <input type="radio" id="slide_first" name="control" value="first" checked>
+                <label  class="control_slider_btn" for="slide_first"></label>
+                <input type="radio" id="slide_second" name="control" value="second">
+                <label  class="control_slider_btn" for="slide_second"></label>
+                <input type="radio" id="slide_thirt" name="control" value="thirt">
+                <label  class="control_slider_btn" for="slide_thirt"></label>     
+               <div class="slide1">
+                    <div class="container clearfix">             
+                        <div class="main_slider column-left ">
+                            <h2>Долго, дорого, скрупулезно.</h2>
+                            <p>Математически выверенный дизайн
+                                <br> для вашего сайта или мобильного приложения.
+                            </p>
+                            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="slider_logo column-right display">
+                            <img src="img/slider1.png" alt="slider1">
+                        </div>
+                    </div>
                 </div>
-                <div class="slider_logo column-right">
-                    <img src="img/slider1.png">
+                <div class="slide2">
+                    <div class="container clearfix">             
+                        <div class="main_slider column-left">
+                            <h2>Любите ли вы математику,
+                                как любим ее мы?</h2>
+                            <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+                                <br> за креатив, чтобы дать им возможность все просчитать выверенный дизайн
+                            </p>
+                            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="slider_logo column-right">
+                            <img src="img/slider2.png" alt="slider2">
+                        </div>
+                    </div>
                 </div>
-                <div class="main_slider column-left">
-                    <h2>Любите ли вы математику,
-                         как любим ее мы?</h2>
-                    <p>Нашим дизайнерам мы удаляем нейроны, ответственные
-                        <br> за креатив, чтобы дать им возможность все просчитать выверенный дизайн
-                    </p>
-                    <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                <div class="slide3">
+                    <div class="container clearfix">             
+                        <div class="main_slider column-left">
+                            <h2>Только наркотики,
+                                только хардкор!</h2>
+                            <p>Все дизайнерские решения в нашей компании принимаются
+                                <br> только под воздействием качественных галлюциногенов
+                            </p>
+                            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                        <div class="slider_logo column-right">
+                            <img src="img/slider3.png" alt="slider3">
+                        </div>
+                    </div>
                 </div>
-                <div class="main_slider column-left">
-                    <h2>Только наркотики,
-                         только хардкор!</h2>
-                    <p>Все дизайнерские решения в нашей компании принимаются
-                        <br> только под воздействием качественных галлюциногенов
-                    </p>
-                    <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
-                </div>
-                <div class="control_clider column-left">
-                    <input type="radio" name="control" value="first" checked>
-                    <input type="radio" name="control" value="second">
-                    <input type="radio" name="control" value="thirt">
-                </div>
-                <div class="slider_logo column-right display">
-                    <img src="img/slider1.png">
-                </div>
-                <div class="slider_logo column-right">
-                    <img src="img/slider2.png">
-                </div>
-                <div class="slider_logo column-right">
-                    <img src="img/slider3.png">
-                </div>
-            </div>
         </div>
         <article class="promo">
             <div class="container clearfix">
@@ -125,8 +134,10 @@
             </div>
         </div>
         <div class="contact_map">
-            <div class="container clearfix">
-                <div class="contact column-left">
+            <div id="map"></div>
+<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.2731508882607!2d38.9690528!3d45.039678599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f9e627e44fd%3A0x3c7b329744b5e508!2z0YPQuy4g0JLQvtC70L7QtNC4INCT0L7Qu9C-0LLQsNGC0L7Qs9C-LCDQmtGA0LDRgdC90L7QtNCw0YAsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTAwMDA!5e0!3m2!1sru!2sru!4v1441890635288" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        
+                <div class="contact">
                     <h4>NЁRDS <span>DESIGN STUDIO</span></h4>
                     <p>350000, Краснодар, ул. Головатого, 100
                     </p>
@@ -134,9 +145,11 @@
                         тел. +7 (861) 275-75-75</p>
                     <a href="#" class="btn">НАПИШИТЕ НАМ</a>
                 </div>
+            <!--
                 <div class="buble column-right"><img src="img/logo_map.png" alt=""></div>
+-->
             </div>
-        </div>
+
         <footer class="main_footer">
             <div class="container clearfix">
                 <div class="sochial column-left">
@@ -157,17 +170,17 @@
                 <div class="column-left">
                     <label for="name">Ваше имя:</label>
                     <br>
-                    <input type="text" name="name" placeholder="Представьтесь пожалуйста">
+                    <input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
                 </div>
                 <div class="column-right">
                     <label for="mail">Ваше e-mail:</label>
                     <br>
-                    <input type="email" name="mail" placeholder="Для отправки ответа">
+                    <input type="email"  id="mail" name="mail" placeholder="Для отправки ответа">
                 </div>
             </div>
             <label for="text">Текс письма</label>
             <br>
-            <textarea name="text" cols="30" rows="10">В свободной форме</textarea>
+            <textarea name="text"  id="text" cols="30" rows="10">В свободной форме</textarea>
             <div class="clearfix">
                 <button type="submit" class="column-left btn">Отправить</button>
                 <button type="reset" class="column-right btn">Отмена</button>
@@ -176,6 +189,52 @@
     </div>
     <script src="script/letter.js"></script>
     <script src="script/slider.js"></script>
+    <script type="text/javascript">
+
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 45.039, lng: 38.971},
+                zoom: 17
+            });
+        
+        var marker = new google.maps.Marker({
+            map: map,
+            place: {
+                location: {lat: 45.039, lng: 38.971},
+                query: '350000, Краснодар, ул. Головатого, 100'
+
+            },
+            attribution: {
+                source: 'Google Maps JavaScript API',
+                webUrl: 'https://developers.google.com/maps/'
+            }
+        });
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: ' <h4>NЁRDSDESIGN STUDIO</h4> <p>350000, Краснодар, ул. Головатого, 100 </p>  <p>тел. +7 (861) 275-75-75</p>'
+            });
+
+            // Opens the InfoWindow when marker is clicked.
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+            var styles = [
+                {
+                    stylers: [
+                        { hue: "#e5e5e5" },
+                        { saturation: -100 },
+                        { lightness: 20 }
+
+                    ]
+                }
+                ];
+            map.setOptions({styles: styles});
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYag-isBZuAktOXBDdamw3tTjoE1_W5oY&callback=initMap">
+    </script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
 	<div class="main">
 			<header class="main_header">
 				<div class="container clearfix">
-					<div class="header_logo"><img src="img/logo_nerd.png"></div>
+                    <div class="header_logo"><img src="img/logo_nerd.png" width="139"  height="56" alt="logo_nerd"></div>
 					<nav class="header_nav">
 						<ul>
 							<li><a href="index.html">студия</a></li>
@@ -34,14 +34,20 @@
 				<div class="main_filter column-left">
 					<form action="/echo" method="post">
 						<div class="price">
+                            <fieldset>
 		 					<legend>СТОИМОСТЬ:</legend>
+                            <div class="price_range">
+                            <div class="price_bar"></div>    
+		 					</div>
 							<input type="range" name="price_range" min="0" max="15000" step="1" value="12000"> <br>
 							<label for="price_min">OT</label>
-							<input type="number" name="price_min" min="0" max="1500">
+                            <input type="number" name="price_min" id="price_min" min="0" max="1500">
 							<label for="price_max">ДО</label>
-							<input type="number" name="price_max" min="0" max="1500">
+                            <input type="number" name="price_max" id="price_max" min="0" max="1500">
+                            </fieldset>
 						</div>
 						<div class="gird">
+						<fieldset>
 							<legend>СЕТКА:</legend>
 							<input type="radio" id="gird_adaptive" name="gird" value="adaptive" checked>
 							<label for="gird_adaptive">Адпаптивная</label><br>
@@ -49,8 +55,10 @@
 							<label for="gird_fix">Фиксированная</label><br>
 							<input type="radio" id="gird_resize" name="gird" value="resize">
 							<label for="gird_resize">Резиновая</label><br>
+                            </fieldset>
 						</div>
 						<div class="spechial">
+                            <fieldset>
 							<legend>ОСОБЕННОСТИ:</legend>
 							<input type="checkbox" id="slaider" name="slaider" value="slaider" checked>
 							<label for="slaider">Слайдер</label><br>
@@ -62,6 +70,7 @@
 							<label for="gallery">Галерея</label><br>
 							<input type="checkbox" id="backet" name="backet" value="backet">
 							<label for="backet">Корзина</label><br>
+                            </fieldset>
 						</div>
 					</form>
 				</div>
@@ -73,20 +82,21 @@
 								<li>ПО ЦЕНЕ</li>
 								<li>ПО ТИПУ</li>
 								<li>ПО ФУНКЦИОНАЛУ</li>
-							</ul>
+							</ul>							
 						</div>
 						<div class="arow"></div>
 					</header>
 					<div class="work_gallery">
-						<a href="#"><img src="img/work.jpg"></a>
-						<a href="#"><img src="img/work2.jpg"></a>
-						<a href="#"><img src="img/work3.jpg"></a>
-						<a href="#"><img src="img/work4.jpg"></a>
-						<a href="#"><img src="img/work5.jpg"></a>
-						<a href="#"><img src="img/work6.jpg"></a>
+                        <a href="#"><img src="img/work.jpg" alt="work"></a>
+                        <a href="#"><img src="img/work2.jpg" width="240" height="240" alt="work2"></a>
+                        <a href="#"><img src="img/work3.jpg" width="240" height="240" alt="work3"></a>
+                        <a href="#"><img src="img/work4.jpg" width="240" height="240" alt="work4"></a>
+                        <a href="#"><img src="img/work5.jpg" width="240" height="240" alt="work5"></a>
+                        <a href="#"><img src="img/work6.jpg"  width="240" height="240" alt="work6"></a>
+                        
 					</div>
 					<div class="pages">
-						<a href="#">1</a>
+						<a href="#" class="selected">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a href="#">СЛЕДУЮЩАЯ</a>
@@ -94,20 +104,22 @@
 				</div>
 			</div>
 		</div>
-			<div class="contact_map">
-				<div class="container clearfix">
-					<div class="contact column-left">
-						<h4>NЁRDS <span>DESIGN STUDIO</span></h4>
-						<p>350000, Краснодар, 
-						ул. Головатого, 100
-						</p>
-						<p>
-						тел. +7 (861) 275-75-75</p>
-						<a href="#" class="btn">НАПИШИТЕ НАМ</a>
-					</div>
-					<div class="buble column-right"><img src="img/logo_map.png" alt=""></div>
-				</div>
-		    </div>
+        <div class="contact_map">
+            <div id="map"></div>
+            <!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.2731508882607!2d38.9690528!3d45.039678599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f9e627e44fd%3A0x3c7b329744b5e508!2z0YPQuy4g0JLQvtC70L7QtNC4INCT0L7Qu9C-0LLQsNGC0L7Qs9C-LCDQmtGA0LDRgdC90L7QtNCw0YAsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTAwMDA!5e0!3m2!1sru!2sru!4v1441890635288" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+
+            <div class="contact">
+                <h4>NЁRDS <span>DESIGN STUDIO</span></h4>
+                <p>350000, Краснодар, ул. Головатого, 100
+                </p>
+                <p>
+                    тел. +7 (861) 275-75-75</p>
+                <a href="#" class="btn">НАПИШИТЕ НАМ</a>
+            </div>
+            <!--
+<div class="buble column-right"><img src="img/logo_map.png" alt=""></div>
+-->
+        </div>
 		<footer class="main_footer">
 			<div class="container clearfix">
 				<div class="sochial column-left">
@@ -122,5 +134,75 @@
 			</div>
 		</footer>
 	</div>
+        <div class="letter">
+            <form action="/echo" method="post">
+                <div class="clearfix">
+                    <div class="column-left">
+                        <label for="name">Ваше имя:</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
+                    </div>
+                    <div class="column-right">
+                        <label for="mail">Ваше e-mail:</label>
+                        <br>
+                        <input type="email"  id="mail" name="mail" placeholder="Для отправки ответа">
+                    </div>
+                </div>
+                <label for="text">Текс письма</label>
+                <br>
+                <textarea name="text"  id="text" cols="30" rows="10">В свободной форме</textarea>
+                <div class="clearfix">
+                    <button type="submit" class="column-left btn">Отправить</button>
+                    <button type="reset" class="column-right btn">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <script src="script/letter.js"></script>
+        <script type="text/javascript">
+
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 45.039, lng: 38.971},
+                    zoom: 17
+                });
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    place: {
+                        location: {lat: 45.039, lng: 38.971},
+                        query: '350000, Краснодар, ул. Головатого, 100'
+
+                    },
+                    attribution: {
+                        source: 'Google Maps JavaScript API',
+                        webUrl: 'https://developers.google.com/maps/'
+                    }
+                });
+
+                var infoWindow = new google.maps.InfoWindow({
+                    content: ' <h4>NЁRDSDESIGN STUDIO</h4> <p>350000, Краснодар, ул. Головатого, 100 </p>  <p>тел. +7 (861) 275-75-75</p>'
+                });
+
+                // Opens the InfoWindow when marker is clicked.
+                marker.addListener('click', function() {
+                    infoWindow.open(map, marker);
+                });
+                var styles = [
+                    {
+                        stylers: [
+                            { hue: "#e5e5e5" },
+                            { saturation: -100 },
+                            { lightness: 20 }
+
+                        ]
+                    }
+                ];
+                map.setOptions({styles: styles});
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYag-isBZuAktOXBDdamw3tTjoE1_W5oY&callback=initMap">
+        </script>
 	</body>
 </html>
